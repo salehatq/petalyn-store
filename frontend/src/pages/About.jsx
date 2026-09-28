@@ -1,2 +1,50 @@
-import {Link} from 'react-router-dom'; import {FiArrowUpRight} from 'react-icons/fi';
-export default function About(){return <main className="page"><div className="container about-hero"><p className="eyebrow">OUR STORY</p><h1>We believe a flower can change the temperature of a whole day.</h1><p>Petalyn began with a simple idea: make it easy to send something beautiful without making the gesture feel complicated.</p></div><div className="container about-image"><img src="/Images/1.jpg" alt="Sunflower"/></div><section className="container values"><div><p className="eyebrow">WHAT WE CARE ABOUT</p><h2>Fresh flowers.<br/>Warm gestures.</h2></div><div className="value-copy"><p><b>01 — Freshness</b><br/>We source for freshness and arrange with a light touch, so the flowers do the talking.</p><p><b>02 — Simplicity</b><br/>Clear choices, easy ordering and no unnecessary fuss.</p><p><b>03 — Thoughtfulness</b><br/>Every delivery is a chance to make someone feel remembered.</p><Link className="btn primary" to="/products">Find your flowers <FiArrowUpRight/></Link></div></section></main>}
+import { Link } from 'react-router-dom';
+import { FiArrowUpRight } from 'react-icons/fi';
+export default function About() {
+  return (
+    <main className="page">
+      <div className="container about-hero">
+        <p className="eyebrow">OUR STORY</p>
+        <h1>We believe a flower can change the temperature of a whole day.</h1>
+        <p>
+          Petalyn began with a simple idea: make it easy to send something
+          beautiful without making the gesture feel complicated.
+        </p>
+      </div>
+      <div className="container about-image">
+        <img src="/Images/1.jpg" alt="Sunflower" />
+      </div>
+      <section className="container values">
+        <div>
+          <p className="eyebrow">WHAT WE CARE ABOUT</p>
+          <h2>
+            Fresh flowers.
+            <br />
+            Warm gestures.
+          </h2>
+        </div>
+        <div className="value-copy">
+          <p>
+            <b>01 — Freshness</b>
+            <br />
+            We source for freshness and arrange with a light touch, so the
+            flowers do the talking.
+          </p>
+          <p>
+            <b>02 — Simplicity</b>
+            <br />
+            Clear choices, easy ordering and no unnecessary fuss.
+          </p>
+          <p>
+            <b>03 — Thoughtfulness</b>
+            <br />
+            Every delivery is a chance to make someone feel remembered.
+          </p>
+          <Link className="btn primary" to="/products">
+            Find your flowers <FiArrowUpRight />
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}

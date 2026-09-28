@@ -18,7 +18,7 @@ export default function Contact() {
             </p>
             <p>
               <FiPhone />
-              <a href="tel:+916307275065">+91 76076 77319</a>
+              <a href="tel:+916307275065">+91 98765 43210</a>
             </p>
             <p>
               <FiMapPin /> Sherwani Nagar, Lucknow, Uttar Pradesh
